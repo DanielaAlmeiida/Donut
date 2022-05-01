@@ -1,5 +1,7 @@
 /* Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rock+Salt&family=Sail&family=Satisfy&family=Sriracha&display=swap');body {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Rock+Salt&family=Sail&family=Satisfy&family=Sriracha&display=swap');
+
+body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -16,7 +18,7 @@
 /* Cabeçalho */
 .cabecalho {
     background-color: #ffffff;
-    height: 80px;
+    height: 12vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,42 +27,40 @@
 .cabecalho-nome-loja {
     color: #FF72A5;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3.5vw;
     display: flex;
     flex-direction: row-reverse;
-    gap: 10px;
+    gap: 0.8vw;
     align-items: center;
 }
 
 .cabecalho-icone {
-    height: 40px;
+    height: 5.5vw;
 }
 
 .cabecalho-menu {
     display: flex;
-    gap: 23px;
+    gap: 2vw;
 }
 
 .cabecalho-menu-item {
     color: #FF72A5;
     text-transform: uppercase;
-    padding: 13px;
-    border-radius: 15px;
+    padding: 1vw;
+    border-radius: 1vw;
+    text-align: center;
 }
 
 .cabecalho-menu-item:hover {
     background-color: rgb(	255, 202, 227, 0.45);
 }
 
-.ondas {
-    margin-bottom: -5px;
-    margin-top: -115px;
-}
+
 
 /* Página Principal */
 .principal {
     background: linear-gradient(180deg, #FF72A5 0%, #FFA7C1 100%);
-    padding: 70px;
+    padding: 3vw;
 }
 
 
@@ -70,36 +70,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 50px;
+    gap: 1vw;
 }
 
 .secao-primaria-div {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4vw;
     align-items: center;
 }
 
 .secao-primaria-titulo {
     font-family: 'Satisfy', cursive;
-
-    font-size: 90px;
+    font-size: 7.5vw;
     justify-items: center;
 }
 .secao-primaria-subtitulo {
-    font-size: 30px;
+    font-size: 3vw;
 }
 .secao-primaria-botao {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 2vw;
     color: #FF72A5;
     font-weight: bolder;
-    border-radius: 15px;
+    font-size: 1.5vw;
+    border-radius: 9vw;
     border: unset;
-    box-shadow: 1px 1px 20px 2px #ffcddf;
-    width: 30%;
-    margin-top: 4%;
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #ffcddf;
+    width: 12.5vw;
 }
 
 .secao-primaria-botao:hover {
@@ -109,9 +108,9 @@
 }
 
 .secao-primaria-imagem {
-    height: 500px;
-    border-radius: 90px;
-    box-shadow: 1px 1px 20px 2px #ffd1e2;
+    height: 38vw;
+    border-radius: 10vw;
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #ffd1e2;
 }
 
 
@@ -121,20 +120,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15%;
-    margin-bottom: 8%;
-    gap: 50px;
+    margin-top: 7vw;
+    gap: 5vw;
+    padding: 5vw;
 }
 
 .secao-secundaria-imagem {
-    height: 500px;
-    border-radius: 90px;
-    box-shadow: 1px 1px 20px 2px #fd74a6;
+    height: 35vw;
+    border-radius: 6vw;
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #fd74a6;
 }
 
 .secao-secundaria-texto {
     color: #fff5f5;
-    font-size: 40px;
+    font-size: 3.8vw;
     text-align: center;
 }
 
@@ -145,20 +144,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20%;
-    gap: 50px;
+    gap: 5vw;
+    padding: 5vw;
 }
 
 .secao-terciaria-texto {
     color: #fff5f5;
-    font-size: 40px;
+    font-size: 3.8vw;
     text-align: center;
 }
 
 .secao-terciaria-imagem {
-    height: 500px;
-    border-radius: 90px;
-    box-shadow: 1px 1px 20px 2px #fd74a6;
+    height: 35vw;
+    border-radius: 6vw;
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #fd74a6;
 }
 
 
@@ -167,18 +166,18 @@
 .rodape {
     background-color: #ffffff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .rodape-texto {
   color: #ff3c84;
-  font-size: 14px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 9px;
+  gap: 1vw;
+  width: 60vw;
 }
 
 .rodape-texto-link {
@@ -187,8 +186,7 @@
 
 .rodape-icones {
     display: flex;
-    gap: 20px;
-    margin: 8px;
+    gap: 1.5vw;
 }
 
 .rodape-icones:hover {
