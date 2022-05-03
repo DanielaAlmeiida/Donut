@@ -43,18 +43,27 @@ body {
     gap: 2vw;
 }
 
-.cabecalho-menu-item {
+.cabecalho-menu-item, .check-btn {
     color: #FF72A5;
     text-transform: uppercase;
-    padding: 1vw;
+    padding: 1.6vw;
     border-radius: 1vw;
     text-align: center;
+
 }
 
-.cabecalho-menu-item:hover {
+.cabecalho-menu-item:hover, .check-btn:hover {
     background-color: rgb(	255, 202, 227, 0.45);
+    cursor: pointer;
+    transition: .5s;
 }
 
+/* Botão Barra de Navegação*/
+.check-btn, #check {
+    display: none;
+    font-size: 5vw;
+    align-self: center;
+}
 
 
 /* Página Principal */
@@ -105,6 +114,7 @@ body {
     background-color: rgba(255, 208, 230, 0.9);
     cursor: pointer;
     color: #ff3c84;
+    transition: .2s;
 }
 
 .secao-primaria-imagem {
@@ -135,6 +145,10 @@ body {
     color: #fff5f5;
     font-size: 3.8vw;
     text-align: center;
+    background: rgba(255, 170, 197, 0.3);
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #fc81ae;
+    padding: 9vw;
+    border-radius: 6vw;
 }
 
 
@@ -152,6 +166,10 @@ body {
     color: #fff5f5;
     font-size: 3.8vw;
     text-align: center;
+    background: rgba(255, 155, 187, 0.3);
+    box-shadow: 0.1vw 0.1vw 2vw 0.2vw #fc85b0;
+    padding: 8.232vw;
+    border-radius: 6vw;
 }
 
 .secao-terciaria-imagem {
@@ -177,7 +195,7 @@ body {
   flex-direction: column;
   text-align: center;
   gap: 1vw;
-  width: 60vw;
+  font-size: 85%;
 }
 
 .rodape-texto-link {
@@ -187,8 +205,58 @@ body {
 .rodape-icones {
     display: flex;
     gap: 1.5vw;
+    color: #ff3c84;
 }
 
-.rodape-icones:hover {
+#rodape-icone {
+    color: #ffffff;
+    background-color:#ff9dba;
+    padding: 0.8vw;
+    border-radius: 8vw;
+}
+
+#rodape-icone:hover {
     cursor: pointer;
+    background-color:#fd74a6;
+}
+
+
+@media (max-width: 700px) {
+    /*Barra de navegação pelo check*/
+    .check-btn {
+        display: block;
+    }
+
+    ul {
+        background-color: rgb(255, 255, 255, .92);
+        position: absolute;
+        left: 0;
+        width: 60%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+        gap: 2vw;
+        bottom: 100%;
+    }
+
+    .cabecalho-menu-item {
+        color: rgb(255, 139, 174);
+    }
+
+    #check:checked ~ ul {
+        bottom: 0;
+        top: 12%;
+    }
+
+
+    /*Tamanho do nome da loja*/
+    .cabecalho-nome-loja {
+        font-size: 7.5vw;
+    }
+
+    .cabecalho-icone {
+        height: 12vw;
+    }
+
 }

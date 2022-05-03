@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icone.png">
     <title>Donuts Shop</title>
@@ -18,10 +17,17 @@
             <img class="cabecalho-icone" src="img/icone.png" alt="Ícone do site">
         </div>
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="">Inicío</a>
-            <a class="cabecalho-menu-item" href="">Os Donuts</a>
-            <a class="cabecalho-menu-item" href="">Sobre Nós</a>
-            <a class="cabecalho-menu-item" href="">Contato</a>
+            <!--Botão da Barra de Navegação-->
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <a class="cabecalho-menu-item" href="">Inicío</a>
+                <a class="cabecalho-menu-item" href="">Os Donuts</a>
+                <a class="cabecalho-menu-item" href="">Sobre Nós</a>
+                <a class="cabecalho-menu-item" href=""> Contato</a>
+            </ul>
         </nav>
     </header>
 
@@ -80,10 +86,11 @@
             </div>
             <a href="https://www.flaticon.com/free-stickers/donut" title="donut stickers">Donut stickers created by Ina Mella - Flaticon</a>
         </div>
+        <!--Ícones-->
         <div class="rodape-icones">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i id="rodape-icone" class="fa fa-instagram"></i>
+            <i id="rodape-icone" class="fa fa-twitter"></i>
+            <i id="rodape-icone" class="fa fa-whatsapp"></i>
         </div>
     </footer>
 </body>
